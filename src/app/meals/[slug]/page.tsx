@@ -16,7 +16,7 @@ const MealsDetaisPage = async({params}:{params:{slug:string}}) => {
        <>
         <header className={classes.header}>
             <div className={classes.image}>
-                <Image src={meal.image} alt={meal.imageTitle} fill /> 
+                <Image src={`https://andrew0028-nextjs-demo-users-image.s3.us-east-2.amazonaws.com/${meal.image as unknown as string}`} alt={meal.imageTitle} fill /> 
             </div>
             <div className={classes.headerText}>
                 <h1>{meal.title}</h1>

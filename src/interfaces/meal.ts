@@ -1,6 +1,6 @@
 export interface IMeal{
     id: string,
-    image:string,
+    image:File,
     imageTitle: string,
     title: string,
     creator: string,
