@@ -46,7 +46,7 @@ export const saveMeal = async(meal:IMeal) => {
       })
 
 
-    meal.image = `/images/${fileName}` as any
+    meal.image = fileName as unknown as File
 
     db.prepare(`
         INSERT INTO meals (title, summary, instructions, creator, creator_email, image, slug)
